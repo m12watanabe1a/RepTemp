@@ -1,0 +1,28 @@
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[version=3]{mhchem}
+\usepackage{siunitx}
+\usepackage{amsmath}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% フォントの設定
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DeclareFontShape{JY2}{mc}{m}{it}{<->ssub*mc/m/n}{}
+\DeclareFontShape{JY2}{mc}{m}{sl}{<->ssub*mc/m/n}{}
+\DeclareFontShape{JY2}{mc}{m}{sc}{<->ssub*mc/m/n}{}
+\DeclareFontShape{JY2}{gt}{m}{it}{<->ssub*gt/m/n}{}
+\DeclareFontShape{JY2}{gt}{m}{sl}{<->ssub*gt/m/n}{}
+\DeclareFontShape{JY2}{mc}{bx}{it}{<->ssub*gt/m/n}{}
+\DeclareFontShape{JY2}{mc}{bx}{sl}{<->ssub*gt/m/n}{}
+\DeclareFontShape{JT2}{mc}{m}{it}{<->ssub*mc/m/n}{}
+\DeclareFontShape{JT2}{mc}{m}{sl}{<->ssub*mc/m/n}{}
+\DeclareFontShape{JT2}{mc}{m}{sc}{<->ssub*mc/m/n}{}
+\DeclareFontShape{JT2}{gt}{m}{it}{<->ssub*gt/m/n}{}
+\DeclareFontShape{JT2}{gt}{m}{sl}{<->ssub*gt/m/n}{}
+\DeclareFontShape{JT2}{mc}{bx}{it}{<->ssub*gt/m/n}{}
+\DeclareFontShape{JT2}{mc}{bx}{sl}{<->ssub*gt/m/n}{}
+
+
+\renewcommand{\title}[2]{
+    \textbf{\Large{#1} \large{#2}} \vspace{1em} \\
+    \textbf{\normalsize{\today \hspace{1em}  \myid \hspace{1em} \myname}}
+}
