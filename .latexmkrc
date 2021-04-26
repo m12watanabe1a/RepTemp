@@ -1,7 +1,5 @@
 #!/usr/bin/env perl
-$pdf_mode         = 3;
-$latex            = 'uplatex -halt-on-error';
-$latex_silent     = 'uplatex -halt-on-error -interaction=batchmode';
-$bibtex           = 'upbibtex';
-$dvipdf           = 'dvipdfmx %O -o %D %S';
-$makeindex        = 'mendex %O -o %D %S';
+$pdflatex = 'lualatex --synctex=1 --file-line-error --halt-on-error --interaction=nonstopmode %O %S';
+$biber = 'biber --bblencoding=utf8 -u -U --output_safechars';
+$bibtex = 'upbibtex';
+$pdf_mode = 1;
