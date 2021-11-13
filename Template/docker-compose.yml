@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  latex:
+    build:
+      context: ../docker
+      dockerfile: latex/Dockerfile
+    container_name: latex
+    volumes:
+      - ./:/workdir/:delegated
+    tty: true
+    stdin_open: true
+    working_dir: /workdir
