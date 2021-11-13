@@ -16,6 +16,7 @@
         "exec",
         "latex",
         "latexmk",
+        "%DOCFILE_EXT%",
       ]
     }
   ],
